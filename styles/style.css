@@ -1,9 +1,54 @@
 /*Some necessary adjustments*/
-h1, body, html, main {
+h1,
+body,
+html,
+main {
   margin: 0;
 }
 /*Import the font and set the default size*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 html {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+#img-container {
+  position: relative;
+}
+#soup-img {
+  width: 100%;
+}
+h1 {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  font-size: 80px;
+  color: white;
+}
+hr {
+  width: auto;
+}
+#container {
+  margin: 100px;
+}
+.img-info {
+  width: 300px;
+  margin-left: 35%;
+}
+figcaption {
+  font-weight: bold;
+}
+ul {
+  list-style-type: "- ";
+}
+ol {
+  counter-reset: list;
+}
+
+ol > li {
+  list-style: none;
+}
+
+ol > li:before {
+  counter-increment: list;
+  content: counter(list) ") ";
 }
